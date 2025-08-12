@@ -2,7 +2,5 @@ Flask
 Flask-CORS
 Pillow
 torch
-torchvision
-timm
-opencv-python-headless
 numpy==1.26.4
+transformers
