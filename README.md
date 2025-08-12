@@ -1,53 +1,117 @@
 Inspiration from - https://storyshort.ai/?via=vo&gad_source=1&gad_campaignid=22638150441&gbraid=0AAAAAp9nL5OZGHXd0CGyFKgM3gURQ9311&gclid=Cj0KCQjwzOvEBhDVARIsADHfJJQ3wREzpUnGEc6EY7jSG-Ui3qw8_CqFvJdeIcrmRw8mqAIBXP6utGsaAochEALw_wcB
 
-to create something like this
+Spatial Image AI
+This project is a full-stack web application that allows users to create immersive spatial images from standard photos using an AI model.
 
-Spatial-Image.ai
-A web-based application that uses AI to convert standard images into immersive spatial wallpapers with a beautiful depth effect, inspired by the iOS spatial wallpaper feature.
+The frontend is built with Next.js and TypeScript, and styled with Tailwind CSS. The backend is a Python API built with the Flask framework.
 
-🚀 Features
-AI-Powered Image Segmentation: Automatically detects the main subject in an image and separates it from the background using Google's MediaPipe Image Segmenter.
+Project Structure
+/spatial-image-ai
+|-- /frontend      # The Next.js application
+|   |-- app/
+|   |-- package.json
+|   |-- ...
+|-- /backend       # The Python Flask API
+|   |-- app.py
+|   |-- requirements.txt
+|   |-- ...
 
-Dynamic Parallax Effect: Creates a 3D depth illusion by making the foreground and background layers move at different speeds in response to mouse movement.
+Prerequisites
+Before you begin, ensure you have the following installed on your system:
 
-Customizable Effects: Users can adjust the intensity of the parallax effect and the amount of blur applied to the background for a personalized look.
+Node.js (v18.x or later)
 
-Modern Dashboard UI: A clean, user-friendly interface with a sidebar for navigation, a main dashboard, and a dedicated creation space.
+Python (v3.8 or later)
 
-Creations Gallery: A page to view all the generated spatial images in a clean, grid-based layout.
+pip (Python package installer)
 
-🛠️ Technologies Used
-Frontend: HTML5, Tailwind CSS
+npm (Node Package Manager, comes with Node.js)
 
-JavaScript: Modern ES6+ for interactivity and DOM manipulation.
+1. Backend Setup (Python API)
+First, set up and run the Python backend server.
 
-AI/Machine Learning: Google MediaPipe Image Segmenter for in-browser machine learning.
+Navigate to the Backend Directory:
 
-Icons: Font Awesome for UI icons.
+cd path/to/your/project/backend
 
-📁 File Structure
-The project is organized into two main pages:
+Create a Virtual Environment (Recommended):
+A virtual environment keeps your project's Python dependencies isolated.
 
-index.html: The main dashboard and the core of the application. This is where users can upload and process their images to create spatial wallpapers.
+# Create the environment
+python -m venv .venv
 
-creations.html: A gallery page that displays dummy tiles representing the user's saved creations.
+# Activate it
+# On Windows:
+.\.venv\Scripts\activate
+# On macOS/Linux:
+source .venv/bin/activate
 
-📖 How to Use
-Open the Dashboard: Launch the index.html file in your web browser.
+Create requirements.txt:
+Create a file named requirements.txt in the /backend folder and add the following lines:
 
-Wait for the AI Model: The "Upload Image" button will be disabled and show a "Loading AI..." status. This is a one-time process on the first visit while the AI model is downloaded and initialized.
+Flask
+Flask-CORS
 
-Upload an Image: Once the button is active, click "Upload Image" to select a photo from your computer. For best results, use an image with a clear, well-defined subject.
+Install Dependencies:
 
-Customize: Use the sliders in the control panel to adjust the parallax intensity and background blur to your liking.
+pip install -r requirements.txt
 
-Enjoy the Effect: Move your mouse over the preview window to see the spatial depth effect in action.
+Create app.py:
+Create a file named app.py in the /backend folder and add the basic Flask server code. (You can get this code from the Spatial Image AI - Python Backend Guide document).
 
-View Creations: Navigate to the creations.html page to see a gallery of your generated images.
+Run the Backend Server:
 
-🔮 Future Improvements
-Save & Store Creations: Implement functionality to save the generated images locally or to a user account.
+python app.py
 
-More Customization: Add more advanced options like different blur types, color adjustments, or foreground effects.
+The server will start, and you should see output indicating it's running on http://127.0.0.1:5000. Keep this terminal window open.
 
-User Accounts: Introduce user authentication to store creations and settings in the cloud.
+2. Frontend Setup (Next.js App)
+Next, set up and run the Next.js frontend in a new terminal window.
+
+Navigate to your main projects directory (the one that will contain the frontend folder).
+
+cd path/to/your/project
+
+Create the Next.js App:
+Run the official Next.js setup command. This will create the /frontend folder and all necessary files.
+
+npx create-next-app@latest
+
+When prompted:
+
+What is your project named? -> frontend
+
+Would you like to use TypeScript? -> Yes
+
+Would you like to use ESLint? -> Yes
+
+Would you like to use Tailwind CSS? -> Yes
+
+... (you can accept the defaults for the rest)
+
+Navigate into the Frontend Directory:
+
+cd frontend
+
+Install lucide-react for Icons:
+The UI uses icons from the lucide-react library. Install it with:
+
+npm install lucide-react
+
+Add the UI Code:
+Open the file at frontend/app/page.tsx and replace its entire contents with the React code from the Spatial Image AI - Next.js Frontend (TypeScript) document.
+
+Run the Frontend Development Server:
+
+npm run dev
+
+The frontend application will start, and you can view it in your browser at http://localhost:3000.
+
+Running the Full Application
+To run the application, you need two terminals open simultaneously:
+
+Terminal 1: Runs the backend server from the /backend directory (python app.py).
+
+Terminal 2: Runs the frontend server from the /frontend directory (npm run dev).
+
+You can then access the website at http://localhost:3000.
