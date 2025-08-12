@@ -6,19 +6,18 @@ This project is a full-stack web application that allows users to create immersi
 The frontend is built with Next.js and TypeScript, and styled with Tailwind CSS. The backend is a Python API built with the Flask framework.
 
 Project Structure
-/spatial-image-ai
-|-- /frontend      # The Next.js application
-|   |-- app/
-|   |-- package.json
-|   |-- ...
-|-- /backend       # The Python Flask API
-|   |-- app.py
-|   |-- requirements.txt
-|   |-- ...
+    /spatial-image-ai
+    |-- /frontend      # The Next.js application
+    |   |-- app/
+    |   |-- package.json
+    |   |-- ...
+    |-- /backend       # The Python Flask API
+    |   |-- app.py
+    |   |-- requirements.txt
+    |   |-- ...
 
 Prerequisites
 Before you begin, ensure you have the following installed on your system:
-
 Node.js (v18.x or later)
 
 Python (v3.8 or later)
@@ -32,19 +31,19 @@ First, set up and run the Python backend server.
 
 Navigate to the Backend Directory:
 
-cd path/to/your/project/backend
+    cd path/to/your/project/backend
 
 Create a Virtual Environment (Recommended):
 A virtual environment keeps your project's Python dependencies isolated.
 
-# Create the environment
-python -m venv .venv
+    # Create the environment
+    python -m venv .venv
 
-# Activate it
-# On Windows:
-.\.venv\Scripts\activate
-# On macOS/Linux:
-source .venv/bin/activate
+    # Activate it
+    # On Windows:
+    .\.venv\Scripts\activate
+    # On macOS/Linux:
+    source .venv/bin/activate
 
 Create requirements.txt:
 Create a file named requirements.txt in the /backend folder and add the following lines:
