@@ -1,3 +1,7 @@
+Inspiration from - https://storyshort.ai/?via=vo&gad_source=1&gad_campaignid=22638150441&gbraid=0AAAAAp9nL5OZGHXd0CGyFKgM3gURQ9311&gclid=Cj0KCQjwzOvEBhDVARIsADHfJJQ3wREzpUnGEc6EY7jSG-Ui3qw8_CqFvJdeIcrmRw8mqAIBXP6utGsaAochEALw_wcB
+
+to create something like this
+
 Spatial-Image.ai
 A web-based application that uses AI to convert standard images into immersive spatial wallpapers with a beautiful depth effect, inspired by the iOS spatial wallpaper feature.
 
